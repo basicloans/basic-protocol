@@ -1,0 +1,22 @@
+{
+  "name": "basic-protocol",
+  "version": "1.0.0",
+  "description": "The Basic Lending protocol",
+  "main": "index.js",
+  "scripts": {
+    "genabi": "truffle compile && truffle-abi -d build/contracts/ -o abi",
+    "size": "truffle run contract-size"
+  },
+  "repository": "https://github.com/magam-fi/basic-protocol.git",
+  "author": "Magma",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "bignumber.js": "8.0.1",
+    "eth-gas-reporter": "^0.2.22",
+    "truffle-contract-size": "^2.0.1"
+  },
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^1.4.0",
+    "truffle-flattener": "^1.6.0"
+  }
+}
